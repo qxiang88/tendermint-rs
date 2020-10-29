@@ -6,7 +6,8 @@ members = [
     "proto",
     "rpc",
     "tendermint",
-    "testgen"
+    "testgen",
+    "wasm-client",
 ]
 
 exclude = [
