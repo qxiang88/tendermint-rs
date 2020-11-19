@@ -232,7 +232,7 @@ pub fn generate_tendermint_lib(prost_dir: &PathBuf, tendermint_lib_target: &Path
         );
 
         for part in parts {
-            tab_count = tab_count - 1;
+            tab_count -= 1;
             let tabs = tab.repeat(tab_count);
             //{tabs} pub mod {part} {
             //{inner_content}

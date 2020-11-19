@@ -8,10 +8,6 @@ pub mod abci {
     include!("prost/tendermint.abci.rs");
 }
 
-pub mod evidence {
-    include!("prost/tendermint.evidence.rs");
-}
-
 pub mod store {
     include!("prost/tendermint.store.rs");
 }

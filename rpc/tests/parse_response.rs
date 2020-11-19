@@ -243,7 +243,8 @@ fn genesis() {
     } = response.genesis;
 
     assert_eq!(chain_id.as_str(), EXAMPLE_CHAIN);
-    assert_eq!(consensus_params.block.max_bytes, 200_000);
+    assert_eq!(consensus_params.block.max_bytes, 22020096);
+    assert_eq!(consensus_params.evidence.max_bytes, 1048576);
 }
 
 #[test]
