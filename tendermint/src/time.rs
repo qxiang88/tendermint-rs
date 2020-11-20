@@ -31,11 +31,7 @@ impl TryFrom<Timestamp> for Time {
             seconds: value.seconds,
             nanos: value.nanos,
         };
-        Ok(SystemTime::try_from(prost_value)
-            .map_err(|e| {
-                Kind::OutOfRange.context(format!("time before EPOCH by {} seconds", e.as_secs()))
-            })?
-            .into())
+        Ok(SystemTime::try_from(prost_value)?.into())
     }
 }
 
